@@ -23,3 +23,15 @@ class Solution {
         return answer;
     }
 }
+
+//다른 사람의 풀이
+// finished가 false면 문자열에 todo_list값 담고 , 붙이고 split으로 다시 ,로 나눠서 배열반환
+class Solution {
+    public String[] solution(String[] todo_list, boolean[] finished) {
+        String str ="";
+        for(int i=0; i< finished.length; i++){
+            str = finished[i]==false ? str+todo_list[i]+"," : str;
+        }
+        return str.split(",");
+    }
+}
