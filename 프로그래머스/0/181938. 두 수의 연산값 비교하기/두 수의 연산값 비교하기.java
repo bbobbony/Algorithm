@@ -8,7 +8,7 @@ class Solution {
         //2. 두가지 수로 2*a*b 연산하기
         int normal = 2 * a * b;
         
-        return Integer.parseInt(special) > normal ? Integer.parseInt(special) : normal ;
+        return Integer.parseInt(special) >= normal ? Integer.parseInt(special) : normal ;
     }
 }
 
